@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700&display=swap');
+
+:root{
+    /* Colors */
+    --color1:#172339;
+    --color2:#49566D;
+    --color3:#F3EDE7;
+    --color4:#FAF8F6;
+    --color5:#A060FF;
+    --color6:#CB30E3;
+    --color7:#FFA84E;
+   
+}
+
+html, body{
+    margin: 0;
+    font-family: 'Epilogue';
+}
