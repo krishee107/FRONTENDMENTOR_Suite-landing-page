@@ -34,6 +34,13 @@ h2 {
 
 h1 span, h2 span {font-weight: 700;}
 
+p {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.0888889px;
+    color: var(--color2);
+}
+
 .logo img {width: 80px;}
 
 /* Button */
@@ -72,7 +79,9 @@ header {
     line-height: 32px;
     letter-spacing: -0.18px;
     color: var(--color4);
-    background:var(--color1);
+    border-color: var(--color1);
+    background:
+    var(--color1);
 }
 .hero-img {width: 100%;}
 .hero-img img {width: 100%;}
@@ -162,4 +171,69 @@ footer {
     font-size: 28px;
     cursor: pointer;
     color: var(--color1);
+}
+
+/* Tablet */
+@media (min-width: 650px) {
+    header {padding: 40px;}
+
+    .button {
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: -0.16px;
+    }
+
+
+    .hero {
+        padding: 40px;
+        display: grid;
+        grid-template-areas:
+            "T T I"
+            "N N N";
+        gap: 0;
+        display: grid;
+        grid-template-columns: 1fr .25fr .5fr;
+    }
+    
+    .hero-img {margin-left: -50px;grid-area: I;}
+    
+    .hero-text {z-index: 5;gap: 40px;display: flex;flex-direction: column;position: relative;grid-area: T;}
+
+    h1 {
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: -0.777778px;
+        width: 570px;
+        margin-bottom: 0;
+    }
+    
+    p {
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.0888889px;
+        color: var(--color2);
+        max-width: 350px;
+    }
+
+    /* Hero */
+    
+    .hero-img img { width: unset;}
+    
+    .hero-numbers {
+        flex-direction: row;
+        grid-area: N;
+        justify-content: space-between;
+        padding: 50px 0;
+    }
+
+    /* Bottom */
+    .bottom {margin: 180px 40px 10px;}
+    
+    /* Footer */
+    footer {
+        flex-direction: revert;
+        justify-content: space-between;
+    }
+    .redes {font-size: 20px;}
+
 }
