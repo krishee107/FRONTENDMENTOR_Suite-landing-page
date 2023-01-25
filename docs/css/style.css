@@ -12,7 +12,154 @@
    
 }
 
+/* General */
 html, body{
     margin: 0;
     font-family: 'Epilogue';
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 44px;
+    letter-spacing: -0.527778px;
+    color: var(--color1);
+}
+h2 {
+    font-size: 40px;
+    letter-spacing: -0.416667px;
+    font-weight: 400;
+    line-height: 48px;
+}
+
+h1 span, h2 span {font-weight: 700;}
+
+.logo img {width: 80px;}
+
+/* Button */
+.button {
+    border: 1px solid;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color1);
+    letter-spacing: -0.14px;
+    padding: 12px 15px;
+    border-radius: 6px;
+    width: fit-content;
+}
+
+/* Header */
+header {
+    padding: 30px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Hero */
+.hero {
+    padding: 50px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.hero-text .button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    color: var(--color4);
+    background:var(--color1);
+}
+.hero-img {width: 100%;}
+.hero-img img {width: 100%;}
+
+/* Hero Numbers */
+.hero-numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    padding: 30px 0;
+}
+.number {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: var(--color1);
+}
+
+.text {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--color2);
+}
+
+/* Bottom */
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--color1);
+    border-radius: 15px;
+    text-align: center;
+    color: var(--color4);
+    margin-top: 150px;
+    padding: 64px 16px;
+}
+
+.bottom-img {margin-top: -235px;}
+
+.bottom p {
+    color: var(--color3);
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.09px;
+}
+
+
+.bottom-info {text-transform: uppercase;}
+.name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.job {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2.5px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    gap: 30px;
+}
+
+
+.copy {
+    font-size: 15px;
+    line-height: 32px;
+    letter-spacing: 0.0833333px;
+    color: var(--color2);
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--color1);
 }
