@@ -16,6 +16,11 @@
 html, body{
     margin: 0;
     font-family: 'Epilogue';
+    width: 100vw;
+    min-height: 100vh;
+    max-width: 1440px;
+    overflow-x: hidden;
+    margin: 0 auto;
 }
 
 h1 {
@@ -236,4 +241,76 @@ footer {
     }
     .redes {font-size: 20px;}
 
+}
+
+/* Desktop */
+@media (min-width: 1150px) {
+    header {padding: 50px 165px;}
+
+    h1 {width: unset;}
+    h2 {
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.5px;
+        margin: 0;
+    }
+    
+    p {
+        font-size: 20px;
+        line-height: 35px;
+        letter-spacing: 0.1px;
+    }
+    
+    .hero {
+        all: unset;
+        padding: 67px 165px;
+        position: relative;
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+    }
+    
+    .hero-numbers {
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .hero-text, .hero-img, .hero-numbers {grid-area: unset;}
+
+    
+    .hero-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+    }
+
+    .text {text-align: left;}
+
+    .bottom {
+        all: unset;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: var(--color1);
+        border-radius: 15px;
+        text-align: center;
+        justify-content: right;
+        margin: 165px;
+        margin-bottom: 60px;
+        color: var(--color4);
+        text-align: left;
+        gap: 40px 0;
+        padding: 80px 125px;
+        position: relative;
+    }
+    
+    .bottom-img {
+        all: unset;
+        position: absolute;
+        left: 150px;
+        bottom: -5px;
+    }
+    footer {padding: 60px 165px;}
 }
